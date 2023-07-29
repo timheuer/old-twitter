@@ -1,5 +1,5 @@
 // Set favicon
-document.querySelector("link[rel~='icon']").href = chrome.runtime.getURL("../assets/twitter-favicon.png");
+document.querySelector("link[rel~='icon']").href = chrome.runtime.getURL("../assets/icon128.png");
 
 function waitForElement(selector) {
   return new Promise(resolve => {
@@ -33,7 +33,7 @@ waitForElement('[aria-label="Twitter"]').then((elm) => {
   container.innerHTML = "";
 
   const twitterIcon = document.createElement("img");
-  twitterIcon.src = chrome.runtime.getURL("../assets/twitter.png");
+  twitterIcon.src = chrome.runtime.getURL("../assets/icon128.png");
   twitterIcon.width = 42;
   twitterIcon.height = 42;
   container.appendChild(twitterIcon);
