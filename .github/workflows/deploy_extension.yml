@@ -13,7 +13,7 @@ jobs:
 
       - name: Zip extension
         run: |
-            zip -r extension.zip .
+            zip -r extension.zip assets scripts manifest.json
 
       - name: Upload artifact
         uses: actions/upload-artifact@v3
