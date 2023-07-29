@@ -13,13 +13,13 @@ jobs:
 
       - name: Zip extension
         run: |
-            zip -r ./dist/extension.zip .
+            zip -r extension.zip .
 
       - name: Upload artifact
         uses: actions/upload-artifact@v3
         with:
             name: extension
-            path: ./dist/extension.zip
+            path: extension.zip
 
       #- name: Deploy to Chrome Web Store
       #  uses: wei/chrome-web-store-upload-action@v1.1.0
