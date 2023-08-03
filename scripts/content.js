@@ -45,7 +45,7 @@ waitForElement('[aria-label="Twitter"]').then((elm) => {
 });
 
 // Set tweet button
-waitForElement('[aria-label="Tweet"]').then((elm) => {
+waitForElement('[aria-label="Post"]').then((elm) => {
   // from the element find any descendant that is a <span> with the innerText "Post"
   const tweetButton = findSpanWithTweetInnerHTML(elm);
 
